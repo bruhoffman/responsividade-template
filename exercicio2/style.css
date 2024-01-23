@@ -4,28 +4,30 @@
 }
 
 main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 600px;
-    gap: 0 0;
+    display: grid;
+    grid-template-columns: repeat(3, 20rem);
+    height: 20rem;
 }
 
 section {
     border: 1px solid black;
-    width: 30%;
-    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
 }
 
 @media screen and (max-width: 480px) {
+
     main {
+        display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
-        height: auto;
     }
 
     section {
-        width: auto;
+        font-size: 1em;
+        height: 50%;
     }
+
+
 }
