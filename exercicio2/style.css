@@ -11,23 +11,28 @@ main {
 
 section {
     border: 1px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3em;
+    font-size: 4rem;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-device-width : 481px) and (max-device-width : 800px) {
 
-    main {
-        display: flex;
-        flex-direction: column;
+    main{
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    section {
-        font-size: 1em;
-        height: 50%;
+    section{
+        background-color: pink;
+    }
+}
+
+@media screen and (max-device-width : 480px) {
+    
+    main{
+        grid-template-columns: 1fr;
     }
 
-
+    section{
+        font-size: 2rem;
+        background-color: lightgreen;
+    }
 }
