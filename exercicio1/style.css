@@ -21,8 +21,11 @@
 
 .container {
     border: 1px solid black;
-    width: 400px;
+    /*width: 400px;
+    font-size: 20px;*/
+    width: 50vw;
     font-size: 20px;
+    height: 50vh;
 }
 
 #fonte-setenta {
